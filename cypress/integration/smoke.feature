@@ -18,7 +18,7 @@ Feature: AvantStay
         @testtwo Search
         Scenario: To search elements
             Given I as a user wanna search some houses
-             When I write three letters
+             When I write two letters
              Then I see the result
 
         @testthree Booking

@@ -31,7 +31,7 @@ Given('I as a user wanna search some houses', () => {
 	pageAccess.toScroll();
 });
 
-When(' write three letters', () => {
+When(' write two letters', () => {
 	pageAccess.toAfterToScrollToSelect();
 });
 

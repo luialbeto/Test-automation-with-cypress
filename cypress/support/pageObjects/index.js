@@ -35,7 +35,7 @@ class PageAccess {
 
   // To select after scroll
   toAfterToScrollToSelect() {
-	cy.get('css-wuo9gr ewqvguk0').type('Nep');
+	cy.get('css-wuo9gr ewqvguk0').type('Ne');
   }
 
   // To select "Selector"

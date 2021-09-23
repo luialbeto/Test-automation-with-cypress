@@ -32,15 +32,17 @@ Then('I must to see the main page', () => {
 
 Given('I as a user wanna search some houses', () => {
 	pageAccess.toScroll();
+	pageAccess.toAfterToScrollToSelect();
+	cy.wait(2000);
 });
 
-When(' write two letters', () => {
-	pageAccess.toAfterToScrollToSelect();
+When('I write two letters', () => {
+	pageAccess.toAfterClicktoScrollToType();
 });
 
 Then('I see the result', () => {
-	expect(true).to.be.true;
-  });
+	cy.contains('California').click();
+});
 
 // ======================================
 

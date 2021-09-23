@@ -35,12 +35,16 @@ class PageAccess {
 
   // To scroll
   toScroll() {
-	cy.get('body').scrollTo(0, 500, {ensureScrollable: false});
+	cy.get('#scrollable-content').scrollTo(0, 2500);
   }
 
   // To select after scroll
   toAfterToScrollToSelect() {
-	cy.get('css-wuo9gr ewqvguk0').type('Pa');
+	cy.get('.e1464oba3 > .css-16lfj6j').click();
+  }
+
+  toAfterClicktoScrollToType() {
+	  cy.get('.css-1l4pp6n').type('Pa');
   }
 
   // To select "Selector"

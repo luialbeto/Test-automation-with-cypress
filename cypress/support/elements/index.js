@@ -1,19 +1,23 @@
 class ElementsAccess {
   loginButton = () => {
-    return '.css-vge0el';
+    return '[class="css-vge0el evoxvxl1"]';
   };
 
   inputEmail = () => {
-    return '[css-1qslxqf enk9dlo0]';
+    return '.css-woojob > :nth-child(1) > .css-xhl2jq > .css-1qslxqf';
   };
 
   inputPassword = () => {
-    return '[css-1qslxqf enk9dlo0]';
+    return '.css-1bty79z > .css-xhl2jq > .css-1qslxqf';
   };
 
   button = () => {
-    return '[css-mwcneu e1o30fif6]';
+    return '.css-mwcneu';
   };
+
+  bookingButton = () => {
+	  return '[href="/bookings"]'
+  }
 
   clickSelector = () => {
     return '[css-wuo9gr ewqvguk0]';

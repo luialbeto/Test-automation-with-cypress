@@ -2,15 +2,20 @@
 
 import ElementsAccess from '../elements';
 const acessaElements = new ElementsAccess();
-
 class PageAccess {
   siteAccess() {
     cy.visit('/');
+	cy.wait(200);
   }
 
   // To make login
   toClickButtonLogin() {
-    cy.get(acessaElements.loginButton()).click({ force: true });
+    cy.get(acessaElements.loginButton()).click();
+  }
+
+  // To get login button
+  toCheckExistsBookingButton() {
+	cy.get(acessaElements.bookingButton()).should('be.visible');
   }
 
   // To input email
@@ -30,12 +35,12 @@ class PageAccess {
 
   // To scroll
   toScroll() {
-	  cy.scrollTo(250, 250);
+	cy.get('body').scrollTo(0, 500, {ensureScrollable: false});
   }
 
   // To select after scroll
   toAfterToScrollToSelect() {
-	cy.get('css-wuo9gr ewqvguk0').type('Ne');
+	cy.get('css-wuo9gr ewqvguk0').type('Pa');
   }
 
   // To select "Selector"
